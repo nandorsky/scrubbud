@@ -1,0 +1,46 @@
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Compare</h3>
+  </div>
+  <div class="modal-body">
+    <table class="table table-bordered">
+    	<thead>
+    		<tr>
+    			<th>Service</th>
+    			<th>Rating</th>
+    			<th>Score</th>
+    			<th>Price</th>
+    			<th>Profile</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    			<td>Ultimate Cleaning Center</td>
+    			<td><%=image_tag("4stars.png", alt: "Stars")%></td>
+    			<td>98</td>
+    			<td>$108.92</td>
+    			<td><a href="profile.html" class="btn btn-primary">Profile</a></td>
+    		</tr>
+    		<tr>
+    			<td>Jenny's Cleaning Service</td>
+    			<td><%=image_tag("4stars.png", alt: "Stars")%></td>
+    			<td>92</td>
+    			<td>$118.92</td>
+    			<td><a href="profile.html" class="btn btn-primary">Profile</a></td>
+    		</tr>
+    		<tr>
+    			<td>Sparkling Clean Center</td>
+    			<td><%=image_tag("4stars.png", alt: "Stars")%></td>
+    			<td>89</td>
+    			<td>$99.92</td>
+    			<td><a href="profile.html" class="btn btn-primary">Profile</a></td>
+    		</tr>
+    	</tbody>
+    </table>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+</div>

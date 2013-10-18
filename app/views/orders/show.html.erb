@@ -1,0 +1,55 @@
+<div class="row">
+	<h2>Order Summary</h2>
+	<div class="span9">
+
+<table class="table table-bordered">
+	<tbody>
+
+		<tr>
+			<td>Name:</td>
+			<td><%= current_user.name %></td>
+		</tr>
+		<tr>
+			<td>Adddress:</td>
+			<td>3415 13th Street NW<br />Washington, DC 20010</td>
+		</tr>
+		<tr>
+			<td>Type of Home:</td>
+			<td>2 Bedroom, 1 Bathroom Apartment</td>
+		</tr>
+		<tr>
+			<td>Number of Bedrooms:</td>
+			<td><%= @order.bedrooms %></td>
+		</tr>
+		<tr>
+			<td>Number of Bathrooms:</td>
+			<td><%= @order.bathrooms %></td>
+		</tr>
+		<tr>
+			<td>Number of Common Areas:</td>
+			<td><%= @order.common %></td>
+		</tr>
+		<tr>
+			<td>Frequency:</td>
+			<td>Every 4 Weeks</td>
+		</tr>
+
+		<tr>
+			<td>Instructions for the Cleaner:</td>
+			<td><%= @order.description %></td>
+		</tr>
+		<tr>
+			<td>Requested Appointment:</td>
+			<td>Tuesday, April 27th, 2012 at 3:30 PM</td>
+		</tr>
+
+	</tbody>
+
+</table>
+
+</div>
+		<div class="span9">
+            <%= link_to 'Back', edit_order_path(@order), class: "btn btn-primary" %> 
+            <%= link_to 'Submit Order', orders_path, class: "btn btn-success" %>
+           </div>
+</div>

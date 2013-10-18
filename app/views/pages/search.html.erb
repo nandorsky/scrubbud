@@ -1,0 +1,330 @@
+<style>
+   .span12 {
+   margin-bottom: 20px;
+   margin-top: 20px;
+   }
+   .reviews {
+   float: left;
+   margin-top: 20px;
+   width:200px;
+   }
+   .score {
+   float: right;
+   margin-right: 10px;
+   }
+   .score h2 {
+   color:red; 
+   margin-left:6px;
+   font-size: 48px;
+   }
+   .score h4 {
+   font-size: 24px;
+   }
+</style>
+<!-- Button to trigger modal -->
+
+
+<div class="row">
+   <div class="hero-unit" style="padding:10px;">
+      <table class="table">
+         <tbody>
+            <tr>
+               <td>Zip Code</td>
+               <td># of Bedrooms</td>
+               <td># of Bathrooms</td>
+               <td>Frequency</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>       
+                  <input type="text" value="20010" class="span2">
+               </td>
+               <td>
+                  <select class="span2">
+                     <option>2</option>
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                     <option>5</option>
+                  </select>
+               </td>
+               <td>
+                  <select class="span2">
+                     <option>2</option>
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                     <option>5</option>
+                  </select>
+               </td>
+               <td>
+                  <select class="span2">
+                     <option>Weekly</option>
+                     <option>Every 2 Weeks</option>
+                     <option>Every 4 Weeks</option>
+                     <option>One Time</option>
+                  </select>
+               </td>
+               <td>
+                  <a href="#" class="btn btn-primary span1" >
+                     Search
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+
+   <div class="span12 offset4">
+<div class="span4 offset1">
+   <span>Sort By:</span>
+   <select>
+   <option>ScrubBud Score</option>
+   <option>Price</option>
+   </select>
+</div>
+
+   <!-- Compare Button -->
+<div class="span2 offset1">
+   <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">Compare</a>
+       <%= render 'layouts/modal' %>
+</div>
+   <!-- Compare Button -->
+
+   </div>
+
+
+   <div class="span3">
+   <hr />
+   <h3> Filters </h3>
+   <h4>Qualifications</h4>
+   <label class="checkbox">
+   <input type="checkbox">
+   Bonded
+   </label>
+   <label class="checkbox">
+   <input type="checkbox">
+   Licensed
+   </label>
+   <label class="checkbox">
+   <input type="checkbox">
+   Insured
+   </label>
+   <hr />
+   <h4>Certification</h4>
+   <label class="checkbox">
+   <input type="checkbox">
+   ScrubBud Certified
+   </label>
+     <hr />
+   <h4>Type of Service</h4>
+   <label class="checkbox">
+   <input type="checkbox">
+   Independent 
+   </label>
+   <label class="checkbox">
+   <input type="checkbox">
+   Locally Owned
+   </label>
+   <label class="checkbox">
+   <input type="checkbox">
+   Franchise
+   </label>
+   <hr />
+   <!-- Questions -->
+   <h3>FAQs About Terms</h3>
+   <div class="accordion" id="accordion2">
+   <div class="accordion-group">
+   <div class="accordion-heading">
+   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+   What Does 'Bonded' Mean?
+   </a>
+   </div>
+   <div id="collapseOne" class="accordion-body collapse">
+   <div class="accordion-inner">
+   A bond is a form of insurance that protects you from any dishonest or criminal acts by the people who will come into your home to clean it.
+   </div>
+   </div>
+   </div>
+   <div class="accordion-group">
+   <div class="accordion-heading">
+   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+   What Does 'Licensed' Mean?
+   </a>
+   </div>
+   <div id="collapseTwo" class="accordion-body collapse">
+   <div class="accordion-inner">
+   Insurance provides liability protection in case a housekeeper is injured in your home. In addition it covers damages if the cleaning people cause an accident, such as forgetting to shut off a faucet or losing a key. 
+   </div>
+   </div>
+   </div>
+   <div class="accordion-group">
+   <div class="accordion-heading">
+   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseBonded">
+   What Does 'Insured' Mean?
+   </a>
+   </div>
+   <div id="collapseBonded" class="accordion-body collapse">
+   <div class="accordion-inner">
+   Insurance provides liability protection in case a housekeeper is injured in your home. In addition it covers damages if the cleaning people cause an accident, such as forgetting to shut off a faucet or losing a key. 
+   </div>
+   </div>
+   </div>
+   <div class="accordion-group">
+   <div class="accordion-heading">
+   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+   What Does 'Worker's Compensation' Mean?
+   </a>
+   </div>
+   <div id="collapseThree" class="accordion-body collapse">
+   <div class="accordion-inner">
+   Worker's compensation will cover a maid or cleaner if they are injured while working in your home.
+   </div>
+   </div>
+   </div>
+   <div class="accordion-group">
+   <div class="accordion-heading">
+   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+   What does 'Background Checked' mean?
+   </a>
+   </div>
+   <div id="collapseFour" class="accordion-body collapse">
+   <div class="accordion-inner">
+   This signifies that ScrubBud has on file a copy of a clean background check for the cleaner.
+   </div>
+   </div>
+   </div>
+   <div class="accordion-group">
+   <div class="accordion-heading">
+   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseCommonarea">
+   What qualifies as a 'common area'?
+   </a>
+   </div>
+   <div id="collapseCommonarea" class="accordion-body collapse">
+   <div class="accordion-inner">
+   AA common area is any type of communal space such as a living room, den or dinning room. This does not include the kitchen.
+   </div>
+   </div>
+   </div>
+   </div>
+   <!-- Questions -->
+   <hr />
+   </div>
+
+
+   <!-- Cleaner Listing -->
+   <div class="span8 well">
+   <div class="offset6" style="margin-bottom:20px;">
+         <span>Check to Compare</span>  
+<input type="checkbox">   </div>
+      <div class="span2">
+
+         <h5>Ultimate Cleaning Center</h5>
+         <%=image_tag("jesse.jpg", style: "width:100px;") %> <br />
+      </div>
+      <div class="reviews">
+         <%=image_tag("star.png", alt: "Stars")%>
+         <a href="#">23</a>
+         <%=image_tag("scrubbud.png", style:"width:30px; margin-right:20px; margin-bottom:10px;")%>
+         <%=image_tag("4stars.png", alt: "Stars")%>
+         <a href="#">102</a>
+         <%=image_tag("yelp.png", style:"width:40px; margin-right:20px;")%>
+         <div class="yelp" style="margin-top:10px; margin-right:164px; float:left; width:200px;">
+         </div>
+         <div class="span4" style="float:left; margin-left:2px;">
+            <p><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px; margin-right:10px;")%>
+               *Bonded   *Insured   *Background Checked
+            </p>
+         </div>
+      </div>
+      <div class="span2 well" style="background:white; padding:10px; width:130px; float:right;">
+         <h2>$105.82</h2>
+         <p style="margin-left:16px;">Every 2 Weeks</p>
+         <a href="profile.html" class="btn btn-primary">View Profile</a>
+      </div>
+      <div class="score" style="float:right;">
+         <h4>ScrubBud <br />Score</h4>
+         <h2>98</h2>
+      </div>
+   </div>
+   <!-- End Cleaner Listing -->
+
+   <!-- Cleaner Listing -->
+   <div class="span8 well">
+   <div class="offset6" style="margin-bottom:20px;">
+         <span>Check to Compare</span>  
+<input type="checkbox">   </div>
+      <div class="span2">
+
+         <h5>Ultimate Cleaning Center</h5>
+         <%=image_tag("jesse.jpg", style: "width:100px;") %> <br />
+      </div>
+      <div class="reviews">
+         <%=image_tag("star.png", alt: "Stars")%>
+         <a href="#">23</a>
+         <%=image_tag("scrubbud.png", style:"width:30px; margin-right:20px; margin-bottom:10px;")%>
+         <%=image_tag("4stars.png", alt: "Stars")%>
+         <a href="#">102</a>
+         <%=image_tag("yelp.png", style:"width:40px; margin-right:20px;")%>
+         <div class="yelp" style="margin-top:10px; margin-right:164px; float:left; width:200px;">
+         </div>
+         <div class="span4" style="float:left; margin-left:2px;">
+            <p><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px; margin-right:10px;")%>
+               *Bonded   *Insured   *Background Checked
+            </p>
+         </div>
+      </div>
+      <div class="span2 well" style="background:white; padding:10px; width:130px; float:right;">
+         <h2>$105.82</h2>
+         <p style="margin-left:16px;">Every 2 Weeks</p>
+         <a href="profile.html" class="btn btn-primary">View Profile</a>
+      </div>
+      <div class="score" style="float:right;">
+         <h4>ScrubBud <br />Score</h4>
+         <h2>98</h2>
+      </div>
+   </div>
+   <!-- End Cleaner Listing -->
+   <!-- Cleaner Listing -->
+   <div class="span8 well">
+   <div class="offset6" style="margin-bottom:20px;">
+         <span>Check to Compare</span>  
+<input type="checkbox">   </div>
+      <div class="span2">
+
+         <h5>Ultimate Cleaning Center</h5>
+         <%=image_tag("jesse.jpg", style: "width:100px;") %> <br />
+      </div>
+      <div class="reviews">
+         <%=image_tag("star.png", alt: "Stars")%>
+         <a href="#">23</a>
+         <%=image_tag("scrubbud.png", style:"width:30px; margin-right:20px; margin-bottom:10px;")%>
+         <%=image_tag("4stars.png", alt: "Stars")%>
+         <a href="#">102</a>
+         <%=image_tag("yelp.png", style:"width:40px; margin-right:20px;")%>
+         <div class="yelp" style="margin-top:10px; margin-right:164px; float:left; width:200px;">
+         </div>
+         <div class="span4" style="float:left; margin-left:2px;">
+            <p><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px; margin-right:10px;")%>
+               *Bonded   *Insured   *Background Checked
+            </p>
+         </div>
+      </div>
+      <div class="span2 well" style="background:white; padding:10px; width:130px; float:right;">
+         <h2>$105.82</h2>
+         <p style="margin-left:16px;">Every 2 Weeks</p>
+         <a href="profile.html" class="btn btn-primary">View Profile</a>
+      </div>
+      <div class="score" style="float:right;">
+         <h4>ScrubBud <br />Score</h4>
+         <h2>98</h2>
+      </div>
+   </div>
+   <!-- End Cleaner Listing -->
+
+
+
+</div>
+
+

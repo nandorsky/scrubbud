@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ScrubBud | Your Cleaning Buddy</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+	<!-- Favicon -->
+	<%= favicon_link_tag 'favicon.ico' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <%= render 'layouts/header' %>
+
+    <div class="container">
+
+    <%= yield %>
+
+    <%= render 'layouts/footer' %>
+
+	</div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+  </body>
+</html>
+
+<script type="text/javascript">
+  $(function() {
+   $('.navbar .nav > li > a').click(function(e){
+       $('.navbar .nav > li.active').removeClass('active')
+       $(this).parent('li').addClass('active')
+    });
+  });
+</script>

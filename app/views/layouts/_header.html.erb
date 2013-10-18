@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/">ScrubBud</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="<%=is_active('search')%>"><%= link_to "Find a Cleaner", "search" %></li>
+              <li class="<%=is_active('works')%>"><%= link_to "How it Works", "works" %></li>
+              <li class="<%=is_active('faqs')%>"><%= link_to "FAQs", "faqs" %></li>
+              <li class="<%=is_active('about')%>"><%= link_to "About Us", "about" %></li>
+            </ul>
+            <div class="navbar-form pull-right">
+            <ul class="nav pull-right">
+                    <li><%= link_to "My Account", "account" %></li>
+
+            </ul>
+            </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+
+  

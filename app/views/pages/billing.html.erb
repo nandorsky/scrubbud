@@ -1,0 +1,76 @@
+<%= render 'layouts/dashboardheader' %>
+<div class="row">
+<div class="span12">
+<h2>Billing</h2>
+
+<ul class="inline">
+  <li style="font-weight:bold;">Current User:</li>
+  <li><%= current_user.email %></li>
+</ul>
+
+<ul class="inline">
+  <li style="font-weight:bold;">Clean Frequency:</li>
+  <li>Every 4 Weeks</li>
+</ul>
+
+<ul class="inline">
+  <li style="font-weight:bold;">Next Clean:</li>
+  <li>04/24/2013</li>
+</ul>
+
+<table class="table table-hover table-bordered">
+              <thead>
+                <tr>
+                  <th>Invoice #</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Clean Status</th>
+                  <th>Price</th>
+                  <th>Tip</th>
+                  <th>Discounts</th>
+                  <th>Total</th>
+                  <th>Invoice Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="error">
+                  <td><a href="#" target="_blank">003</td>
+                  <td>03/24/2013</td>
+                  <td>3:00 PM</td>
+                  <td>Complete</td>
+                  <td>$109.00</td>
+                  <td>$10.00</td>
+                  <td>$0.00</td>
+                  <td>$119.00</td>
+                  <td>Invoiced</td>
+                </tr>
+                <tr class="success">
+                  <td><a href="#" target="_blank">002</td>
+                  <td>02/24/2013</td>
+                  <td>3:00 PM</td>
+                  <td>Complete</td>
+                  <td>$109.00</td>
+                  <td>$10.00</td>
+                  <td>$0.00</td>
+                  <td>$119.00</td>
+                  <td>Paid</td>
+                </tr>
+                 <tr class="success">
+                  <td><a href="#" target="_blank">001</td>
+                  <td>01/24/2013</td>
+                  <td>3:00 PM</td>
+                  <td>Complete</td>
+                  <td>$109.00</td>
+                  <td>$10.00</td>
+                  <td>$0.00</td>
+                  <td>$119.00</td>
+                  <td>Paid</td>
+                </tr>
+              </tbody>
+            </table>
+
+
+</div>
+
+
+</div>

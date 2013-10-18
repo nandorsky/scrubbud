@@ -1,0 +1,157 @@
+<style>
+   .icon img {
+   width:140px;
+   padding-bottom:40px;
+   }
+</style>
+<!-- Main hero unit for a primary marketing message or call to action -->
+<div class="hero-unit" style="background: url(<%= asset_path 'bg_header.jpg'%>)no-repeat center center;">
+   <h1 style="color:white;">Find Your Cleaner</h1>
+   <br />
+   <input class="span2" type="text" placeholder="Zip Code" >
+   <select class="span2">
+      <option># of Bedrooms</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+   </select>
+   <select class="span2">
+      <option># of Bathrooms</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+   </select>
+   <select class="span2">
+      <option>Frequency</option>
+      <option>Weekly</option>
+      <option>Every 2 Weeks</option>
+      <option>Every 4 Weeks</option>
+      <option>One Time</option>
+   </select>
+   <p style="float:right"><%= link_to 'Search',  search_path, class: "btn btn-primary btn-large span3" %>
+</div>
+<!-- Example row of columns -->
+<div class="row">
+   <div class="span12" style="border-bottom:4px solid black; margin-bottom:20px;">
+      <center>
+         <h2>Why ScrubBud?</h2>
+      </center>
+   </div>
+   <div class="span12">
+<style type="text/css">
+
+.span4 {
+   width:360px;
+}
+
+</style>
+      <div class="span4">
+         <h4>Find Your Cleaner.</h4>
+         <p>Life is messy enough; let ScrubBud take all the hassle out of vetting your next cleaning provider. With our easy to use platform, in-depth certification process and peer reviews you can rest assured that your house is in good hands.</p>
+      </div>
+      <div class="span4">
+         <h4>Verified Reviews.</h4>
+         <p>We don't allow just anyone to leave a review. Our system validates that a customer leaving a review is actually a customer of the service they're reviewing.</p>
+      </div>
+      <div class="span4">
+         <h4>Service Guaranteed.</h4>
+         <p>Unhappy with our service? Don’t worry – we’ve got your back. If you’re not satisfied, just let us know and either your next clean is on us or we’ll offer you a full refund.</p>
+      </div>
+
+     <!-- <table class="table table-bordered">
+         <tbody>
+            <tr>
+               <td></td>
+               <td>ScrubBud</td>
+               <td><%=image_tag("homeadvisor.png", style:"width:100px;" )%></td>
+               <td><%=image_tag("yelp.jpg", style:"height:40px;" )%></td>
+               <td><%=image_tag("angies-list-logo.png", style:"height:40px;" )%></td>
+            </tr>
+            <tr>
+               <td>Customer Ratings & Reviews</td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+            </tr>
+            <tr>
+               <td>Live call center support</td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+            </tr>
+            <tr>
+               <td>Information provided about license, bonds and insurance</td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("xmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+            </tr>
+            <tr>
+               <td>Pro screened for felonies</td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("xmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("xmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+            </tr>
+            <tr>
+               <td>Pro screened for bankruptcy</td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("xmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("xmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+            </tr>
+            <tr>
+               <td>Categorical Reviews</td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("xmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("xmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+            </tr>
+            <tr>
+               <td>Detailed information about the cleaners</td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("xmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("xmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+            </tr>
+            <tr>
+               <td>Instant online pricing</td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("xmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("xmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("xmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+            </tr>
+            <tr>
+               <td>Online booking</td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("xmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("xmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("xmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+            </tr>
+            <tr>
+               <td>Verified that reviews are left by actual customers</td>
+               <td><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("xmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("xmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+               <td><%=image_tag("xmark.png", alt: "Checkmark", style: "width:24px;" )%></td>
+            </tr>
+            <tr>
+               <td>Cost</td>
+               <td style="color:green; font-size:24px; font-weight:bold;">Free</td>
+               <td style="color:green; font-size:24px; font-weight:bold;">Free</td>
+               <td style="color:green; font-size:24px; font-weight:bold;">Free</td>
+               <td style="color:red; font-size:24px; font-weight:bold;">Fee Required</td>
+            </tr>
+
+         </tbody>
+      </table>-->
+
+   </div>
+
+</div>

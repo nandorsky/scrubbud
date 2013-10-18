@@ -1,0 +1,15 @@
+<%= simple_form_for(@order, html: { class: "form-horizontal"}) do |f| %>
+  <%= f.error_notification %>
+ <legend>About You</legend>
+ <legend>Your Order</legend>
+ 	<%= f.input :bathrooms, label: 'Type of Residence', collection: [ "Studio", "Apartment", "Townhouse"] %>
+  <%= f.input :bathrooms, collection: 1..5 %>
+  <%= f.input :bedrooms, collection: 1..5 %>
+  <%= f.input :common, collection: 1..5 %>
+  <%= f.input :description, label: 'Any special instructions for the cleaner?', as: :text, input_html: { rows: "3" } %>
+
+  <div class="form-actions">
+    <%= f.button :submit, class: "btn btn-primary", value: "Next >>" %>
+  </div>
+<% end %>
+

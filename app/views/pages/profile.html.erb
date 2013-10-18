@@ -1,0 +1,308 @@
+<style>
+   .span12 {
+   margin-bottom: 20px;
+   margin-top: 20px;
+   }
+   .reviews {
+   float: left;
+   margin-top: 20px;
+   }
+   .score {
+   float: right;
+   margin-right: 10px;
+   }
+   .score h2 {
+   color:red; 
+   margin-left:6px;
+   font-size: 48px;
+   }
+   .score h4 {
+   font-size: 24px;
+   }
+   .yelpreview {
+   float:left;
+   }
+</style>
+<div class="span12">
+   <!-- Top of Page Overview -->
+   <div class="span6 well">
+      <div class="score">
+         <h4>ScrubBud <br />Score</h4>
+         <h2>98%</h2>
+      </div>
+      <div class="span2">
+         <h5>Ultimate Cleaning Center</h5>
+         <%=image_tag("jesse.jpg", style: "width:100px;") %> <br />
+         <p>What should I put here about the company? Anything?</p>
+      </div>
+      <div class="reviews">
+         <div class="reviews">
+            <%=image_tag("star.png", alt: "Stars")%>
+            <a href="#">23</a>
+            <%=image_tag("scrubbud.png", style:"width:30px; margin-right:20px; margin-bottom:10px;")%>
+         </div>
+      </div>
+      <div class="yelp">
+         <%=image_tag("4stars.png", alt: "Stars")%>
+         <a href="#">102</a>
+         <%=image_tag("yelp.png", style:"width:40px; margin-right:20px;")%>
+      </div>
+      <div class="yelp" style="margin-top:10px; margin-right:164px; float:right; width:200px;">
+         <p><i>'Ultimate Cleaning Center was awesome! They showed up right on time and did a fantastic job!'</i>-- John Aberman</p>
+      </div>
+      <div class="span4" style="float:right;">
+         <p><%=image_tag("checkmark.png", alt: "Checkmark", style: "width:24px; margin-right:10px;")%>
+            *Bonded   *Insured   *Background Checked
+         </p>
+      </div>
+   </div>
+   <div class="span3 well">
+      <h3>Order This Clean</h3>
+      <select class="form-control">
+         <option>Bathrooms</option>
+      </select>
+      <select class="form-control">
+         <option>Bedrooms</option>
+      </select>
+      <select class="form-control">
+         <option>Frequency</option>
+      </select>
+      <h4>Price</h4>
+      <h3>$187.00</h3>
+      <a href="order.html" class="btn btn-primary">Book Now</a>
+   </div>
+   <!-- ScrubBud Guarantee -->
+   <div class="span6">
+      <h2>What is the ScrubBud Score?</h2>
+      <h5>The ScrubBud Score is comprised of</h5>
+   </div>
+</div>
+<!-- Navigation -->
+<div class="span12" style="margin-left:80px;">
+   <ul class="nav nav-pills">
+      <li class="active"><a href="#reviews">Reviews</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#about">About this Cleaner</a></li>
+      <li><a href="#included">What is Included</a></li>
+   </ul>
+</div>
+<!-- Reviews -->
+<div class="span12">
+   <h3 id="reviews">Reviews</h3>
+</div>
+<div class="span12">
+   <ul id="myTab" class="nav nav-tabs">
+      <li class="active"><a href="#scrubbud" data-toggle="tab">ScrubBud Reviews</a></li>
+      <li class=""><a href="#yelp" data-toggle="tab">Yelp</a></li>
+      <li class=""><a href="#testimonial" data-toggle="tab">Testimonials</a></li>
+   </ul>
+   <div id="myTabContent" class="tab-content">
+      <!-- ScrubBud Reviews -->
+      <div class="tab-pane fade active in" id="scrubbud">
+         <div class="span1">
+            <p>Overall</p>
+            <%=image_tag("star.png")%>
+         </div>
+         <table class="table table-bordered span7">
+            <tbody>
+               <tr>
+                  <td>
+                     <p>Punctual<%=image_tag("star.png", style: "margin-left:20px;")%></p>
+                  </td>
+                  <td>
+                     <p>Quality of Serivce<%=image_tag("star.png", style: "margin-left:20px;")%></p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Friendly and Courteous<%=image_tag("star.png", style: "margin-left:20px;")%></p>
+                  </td>
+                  <td>
+                     <p>Value<%=image_tag("star.png", style: "margin-left:20px;")%></p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Communication<%=image_tag("star.png", style: "margin-left:20px;")%></p>
+                  </td>
+                  <td>
+                     <p>I would recommend to a friend<%=image_tag("star.png", style: "margin-left:20px;")%></p>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <div class="span9 well" style="background:white;">
+            <div class="span2">
+               <p>Sheryl Crow</p>
+            </div>
+            <div class="span4" style="margin-bottom:20px;">
+               <p><%=image_tag("star.png", style: "margin-right:10px;")%> 1/2/24</p>
+            </div>
+            <div class="span8">
+               <p>6:16pm January 24: <br>Update: The two ladies from Elite Cleaning Service did come. &nbsp;They got here about 15 minutes after 4. &nbsp;But they worked two hours and I thought they did a very good job. &nbsp;The place looks cleaner than its ever been and has a refreshing lemony smell. &nbsp;So I up'd the review to 4 stars because of the quality of service and the friendliness of the actual cleaners. &nbsp;I think the problem with this company is on the management end of the business. &nbsp;Very poor communication but I don't think the people doing the actual hard work should be penalized for having bad bosses.<br><br>3:40pm January 24: <br>Bought the living social deal... scheduled an appointment for today since I'm working from home today anyway. &nbsp;At the time that I made the appointment, I was given a 4-hour window, 12-4, and told that someone would call me the day before the appointment to confirm and give a more specific time.<br><br>Nobody called me yesterday and when I tried to call them, I got a voicemail. &nbsp;I left a message and never got called back. &nbsp;I tried to call again today and was told between 2 and 2:30. &nbsp;It is now 3:40, 20 minutes before the end of the original 4 hour window and almost 1.5 - 2 hours after the time I was given on the phone earlier today.<br><br>After reading reviews saying they were wonderful or they never showed up, I'm concerned that I'm going to call into that second category. &nbsp;I'll be sure to update my review at the end of the day... but starting to wonder how I'm going to get my money back if they don't come.<br><br>*If they truly don't come, this review will drop to one star. &nbsp;The second star right now is to give them the benefit of the doubt...</p>
+            </div>
+         </div>
+         <div class="span9 well" style="background:white;">
+            <div class="span2">
+               <p>Steve Case</p>
+            </div>
+            <div class="span4" style="margin-bottom:20px;">
+               <p><%=image_tag("star.png", style: "margin-right:10px;")%> 1/2/24</p>
+            </div>
+            <div class="span8">
+               <p>Such a mixed bag.<br><br>They have been to out house three times, cleaning there twice (more about that later). &nbsp;When they first came, a supervisor came along with the cleaners, looking over the house and talking to us about our needs. &nbsp;We were impressed with this level of professionalism and attention to detail, &nbsp;And each cleaning they did was exceptionally thorough. &nbsp;It is this fact that gets them up to two stars.<br><br>But the problems outweighed all this, and I cannot imagine ever using this company again. &nbsp; &nbsp;I can''t figure out how what they would have done to cause this, but they left a large, rectangular dark mark on the Formica kitchen counter next to the sink; they unplugging computer equipment in our office/study (presumably for for their vacuum cleaner), causing problems that required an hour-long effort to get it back up properly. &nbsp;We prefer ceiling fans to air conditioning, so we leave the windows open during the day. &nbsp;They staff, however, close the windows and apparently in the process of dusting turned up the thermostat to over 80 degrees -- in the summer time -- thus turning the boiler on. &nbsp; <br><br>We sent a photo of the damage to the countertop, and the manager with whom we were communicating said that he would come by to see the damaged counter top, but he never did. &nbsp;<br><br>Despite these problems, the cleaning was thorough and we began negotiating with the manager about the terms for another cleaning, considering the damage to the countertop. &nbsp;While these negotiations were going on, they sent a crew that apparently showed up one Friday morning, when they somehow assumed they had an appointment to clean again. &nbsp;However, because the company had lost the house key we gave it on the first visit, its staff did not gain entry. <br><br>Why we did not conclude after this incident that Elite Cleaning Service is bad news, I cannot say, but we offered them another chance; they offered to halve the standard price. This extra chance was plainly a mistake. &nbsp; <br><br>When we did make an appointment to try a second chance cleaning last Friday, their staff again did a thorough cleaning, but the counter near the sink was again marked, this time showing circles of white that are even more prominent than the damage the month before (we have sent them a photo). &nbsp;The kitchen floor was also covered by an oily film. &nbsp;We have mostly washed off the film, but the markings on the countertop are apparently permanent.<br><br>At this point we have suggested that the company choose between replacfing the countertop and paying to have the front door lock rekeyed (given the fact that they lost our key), and just refunding everything they have charged to our credit card.<br><br>We'll report back on that.</p>
+            </div>
+         </div>
+      </div>
+      <!-- Yelp Reviews -->
+      <div class="tab-pane fade" id="yelp">
+         <!-- Review 1 -->
+         <div class="yelpreview">
+            <div class="span1">
+               <%=image_tag("jesse.jpg", width: "60px")%>
+               <p>John Beadle</p>
+            </div>
+            <div class="span6">
+               <p><%=image_tag("star.png", style: "margin-right:10px;")%>(74 Reviews)</p>
+               <p>This cleaner was awesome! Their crew wa...</p>
+            </div>
+         </div>
+         <div class="yelpreview">
+            <div class="span1">
+               <%=image_tag("jesse.jpg", width: "60px")%>
+               <p>John Beadle</p>
+            </div>
+            <div class="span6">
+               <p><%=image_tag("star.png", style: "margin-right:10px;")%>(74 Reviews)</p>
+               <p>This cleaner was awesome! Their crew wa...</p>
+            </div>
+         </div>
+         <div class="yelpreview">
+            <div class="span1">
+               <%=image_tag("jesse.jpg", width: "60px")%>
+               <p>John Beadle</p>
+            </div>
+            <div class="span6">
+               <p><%=image_tag("star.png", style: "margin-right:10px;")%>(74 Reviews)</p>
+               <p>This cleaner was awesome! Their crew wa...</p>
+            </div>
+         </div>
+      </div>
+      <!-- Testimonials -->
+      <div class="tab-pane fade" id="testimonial">
+         <div class="span8 well">
+            <div class="span1">
+               <%=image_tag("jesse.jpg", width: "60px")%>
+               <h5>Jesse Rose</h5>
+            </div>
+            <div class="span6" style="margin-top:20px;">
+               <p><i>'Amazing job! I cannot believe what they did! They really cleaned deep down!'</i></p>
+            </div>
+         </div>
+         <div class="span8 well">
+            <div class="span1">
+               <%=image_tag("jesse.jpg", width: "60px")%>
+               <h5>Jesse Rose</h5>
+            </div>
+            <div class="span6" style="margin-top:20px;">
+               <p><i>'Amazing job! I cannot believe what they did! They really cleaned deep down!'</i></p>
+            </div>
+         </div>
+         <div class="span8 well">
+            <div class="span1">
+               <%=image_tag("jesse.jpg", width: "60px")%>
+               <h5>Jesse Rose</h5>
+            </div>
+            <div class="span6" style="margin-top:20px;">
+               <p><i>'Amazing job! I cannot believe what they did! They really cleaned deep down!'</i></p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="span12">
+      <h3 id="pricing">Pricing</h3>
+      <table class="table table-hover table-bordered span4">
+         <tr>
+            <td>Weekly</td>
+            <td>$189</td>
+         </tr>
+         <tr>
+            <td>Bi-Weekly</td>
+            <td>$192</td>
+         </tr>
+         <tr>
+            <td>Every 4 Weekls</td>
+            <td>$199</td>
+         </tr>
+         <tr>
+            <td>One Time</td>
+            <td>$212</td>
+         </tr>
+      </table>
+   </div>
+   <!-- About this Cleaner -->
+   <div class="span12">
+      <h3 id="about">About this Cleaner</h3>
+      <div class="span8">
+         <p>Do you need a "spring cleaning" or just a routine cleaning at your home or place of business? Then MAB cleaners offers a variety of affordable cleaning packages to accommodate your needs.  Our team of professional cleaners and customer service representatives are trained and thoroughly screened to provide the highest quality cleaning experience.</p>
+         <p>Our company is insured and bonded to provide our clients a peace of mind.   We offer same day cleaning, as well as weekly, bi-weekly and monthly plans. Please ask customer service about our satisfaction guarantee.</p>
+      </div>
+   </div>
+   <!-- Whats Included -->
+   <div class="span12">
+      <h3 id="included">Whats Included</h3>
+      <p>General</p>
+      <ul>
+         <li>Appliance exteriors cleaned (interiors upon request) </li>
+         <li>Microwave exterior/interior cleaned </li>
+         <li>Tables and chairs cleaned </li>
+         <li>Counter tops and back splash disinfected (all items removed and replaced) </li>
+         <li>Cabinet fronts cleaned </li>
+         <li>Sinks scrubbed and disinfected (dishes upon request) </li>
+         <li>Floor vacuumed and/or washed </li>
+         <li>Windowsills cleaned (blinds dusted upon request) </li>
+         <li>Baseboards dusted </li>
+         <li>Trash emptied</li>
+      </ul>
+      <p>Bathrooms</p>
+      <ul>
+         <li>Tub and shower tiles scrubbed, disinfected and rinsed </li>
+         <li>Toilets disinfected inside and out </li>
+         <li>Towels neatly hung and folded </li>
+         <li>counter tops disinfected (all items removed and replaced) </li>
+         <li>Cabinet front cleaned </li>
+         <li>Sinks scrubbed and disinfected </li>
+         <li>Floors vacuumed and/or washed </li>
+         <li>Windowsills cleaned (blinds dusted upon request) </li>
+         <li>Trash emptied </li>
+         <li>Mirrors cleaned </li>
+      </ul>
+      <p>Bedrooms </p>
+      <ul>
+         <li>Beds made (linens changed upon request) </li>
+         <li>Lamps cleaned and lampshades dusted </li>
+         <li>Furniture dusted - top, front and underneath </li>
+         <li>Floors vacuumed and/or washed (under bed if accessible) </li>
+         <li>Windowsills cleaned (blinds dusted upon request) </li>
+         <li>Baseboards dusted </li>
+         <li>Fingerprints removed from all woodwork, door frames and switch plates </li>
+         <li>Trash emptied </li>
+         <li>Mirrors cleaned </li>
+      </ul>
+      <p>Other Living Areas, including Hallways and Stairs</p>
+      <ul>
+         <li>Upholstered furniture vacuumed </li>
+         <li>Cushions and pillows fluffed and straightened </li>
+         <li>Lamps cleaned and lampshades dusted </li>
+         <li>Furniture dusted - on top, on front and underneath </li>
+         <li>Hardwood floors vacuumed and/or washed </li>
+         <li>Tile floors vacuumed and/or washed </li>
+         <li>Hallways and stairs vacuumed and/or washed </li>
+         <li>Carpets vacuumed </li>
+         <li>Windowsills cleaned (blinds dusted upon request) </li>
+         <li>Baseboards dusted </li>
+         <li>Trash emptied </li>
+      </ul>
+   </div>
+   <!-- Bottom of the Page -->
+</div>
