@@ -1,9 +1,21 @@
 Scrubbud::Application.routes.draw do
+  get "cleaner_profile/index"
+
   resources :orders
 
   devise_for :users, :path => ''
 
   root :to => 'pages#home'
+
+  get 'firstgreenclean' => 'cleaner_profile#firstgreenclean'
+
+  get 'realtouchmaids' => 'cleaner_profile#realtouchmaids'
+
+  get 'sparklingcs' => 'cleaner_profile#sparklingcleaningservices'
+
+  get 'cleaner_home' => 'cleaner_profile#index'
+
+  get'scs' => 'cleaner_profile#spotlesscleaningservices'
 
   get 'about' => 'pages#about'
 
