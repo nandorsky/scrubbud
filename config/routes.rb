@@ -7,6 +7,10 @@ Scrubbud::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  get 'skilledmaids' => 'cleaner_profile#skilledmaids'
+
+  get 'cleanrus' => 'cleaner_profile#cleanrus'
+
   get 'firstgreenclean' => 'cleaner_profile#firstgreenclean'
 
   get 'realtouchmaids' => 'cleaner_profile#realtouchmaids'
