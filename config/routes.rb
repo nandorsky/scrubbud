@@ -7,6 +7,10 @@ Scrubbud::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  get 'certified' => 'pages#scubbud_certified'
+
+  get 'verified' => 'pages#verified_reviews'
+
   get 'skilledmaids' => 'cleaner_profile#skilledmaids'
 
   get 'cleanrus' => 'cleaner_profile#cleanrus'
