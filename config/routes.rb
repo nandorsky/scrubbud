@@ -7,19 +7,8 @@ Scrubbud::Application.routes.draw do
 
   root :to => 'pages#home'
 
-    get 'knightpoint' => 'knight_point#home'
+  get 'roundabout' => 'cleaner_profile#roundabout'
 
-  get 'dtbhome' => 'downto_basics#home'
-  
-  get 'dtbproduct' => 'downto_basics#product'
-
-  get 'dtbsearch' => 'downto_basics#dtbsearch'
-
-  get 'dashboard' => 'donor_portfolio#dashboard'
-
-  get 'blank' => 'donor_portfolio#blank'
-
-  get 'holidayapp' => 'holiday_app#home'
 
   get 'certified' => 'pages#scubbud_certified'
 
